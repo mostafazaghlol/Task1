@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Task1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_accepted_fragment">Hello accepted fragment</string>
+    <string name="hello_cancelled_fragment">Hello cancelled fragment</string>
+    <string name="hello_pending_fragment">Hello pendening fragment</string>
+    <string name="fackmessage">ابى أروح الهايبر وما عندى سياره ممكن حد يودبنى</string>
+    <string name="fackTime">منذ ساعة</string>
+    <string name="fackPeople">رجال</string>
+    <string name="fackhelp">فزعة سيارة</string>
+    <string name="facknum">2 فزعوا</string>
+    <string name="cancel">إلغاء</string>
+</resources>

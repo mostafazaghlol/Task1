@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/type_car"
+        android:layout_margin="10dp"
+        android:id="@+id/itemimage"/>
+    <ImageView
+        android:id="@+id/orangecircle"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/orange"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/itemimage"
+        android:layout_toRightOf="@id/orangecircle">
+        <TextView
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:id="@+id/maintitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fackmessage"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceLarge"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/mainhelptypeno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/facknum"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/my_list_help_accepted_accept"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/mainhelptype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fackhelp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/my_list_help_accepted_info_help_type"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/mainType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fackPeople" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/my_list_help_accepted_info_attendance"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/maintime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fackTime"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/my_list_help_accepted_time"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btCancel"
+            android:layout_gravity="right"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/cancel"/>
+
+    </LinearLayout>
+</RelativeLayout>

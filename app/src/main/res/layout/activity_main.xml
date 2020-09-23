@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:scaleType="center"
+            android:src="@drawable/header"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="25dp"
+            android:src="@drawable/my_list_help_accepted_back" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="25dp"
+            android:src="@drawable/my_list_help_accepted_nav_add" />
+
+        <RadioGroup
+            android:layout_centerInParent="true"
+            android:id="@+id/toggle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:background="@drawable/oval"
+            android:checkedButton="@+id/offer"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="الاخرين"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/offer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="فزعاتى"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+    <com.gigamole.navigationtabstrip.NavigationTabStrip
+        android:id="@+id/strip"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/offwhite"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:nts_color="#800080"
+        app:nts_size="15sp"
+        app:nts_weight="2dp"
+        app:nts_factor="3.5"
+        app:nts_titles="@array/titles"
+        app:nts_type="line"
+        app:nts_gravity="bottom"
+        app:nts_typeface="fonts/typeface.otf"
+        app:nts_corners_radius="25dp"
+        app:nts_animation_duration="300"
+        app:nts_active_color="#800080"
+        app:nts_inactive_color="#c4c4c4"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pager1"/>
+</LinearLayout>
